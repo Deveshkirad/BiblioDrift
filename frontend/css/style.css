@@ -4062,6 +4062,28 @@ main {
     background-color: var(--wood-light);
 }
 
+.btn-secondary {
+    background-color: var(--paper-color);
+    color: var(--wood-dark);
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+    background-color: var(--input-bg);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-soft);
+}
+
 .btn-outline {
     background-color: transparent;
     color: var(--wood-dark);
