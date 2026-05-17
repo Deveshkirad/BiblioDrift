@@ -14,6 +14,8 @@
     --input-border: rgba(0, 0, 0, 0.1);
     --book-bg: #fff;
     --paper-color: #fffdf9;
+    --nav-active-color: #3a241c;
+    --nav-active-ring: rgba(58, 36, 28, 0.18);
 
     /* Vibe Colors */
     --vibe-mystery: #78909c;
@@ -42,6 +44,8 @@
     --input-border: rgba(255, 255, 255, 0.1);
     --book-bg: #2c2420;
     --paper-color: #e0d5cb;
+    --nav-active-color: #fff2df;
+    --nav-active-ring: rgba(255, 242, 223, 0.22);
 }
 
 * {
@@ -199,7 +203,7 @@ header {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #ff5a1f;
+    color: var(--nav-active-color);
 }
 
 .nav-links a::after {
@@ -210,8 +214,8 @@ header {
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background: #ff5a1f;
-    box-shadow: 0 0 0 3px rgba(255, 90, 31, 0.14);
+    background: var(--nav-active-color);
+    box-shadow: 0 0 0 3px var(--nav-active-ring);
     opacity: 0;
     transform: translateX(-50%) scale(0.35);
     transition: opacity 0.22s ease, transform 0.22s ease;
